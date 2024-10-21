@@ -1,17 +1,10 @@
-# Python Program to find the area of triangle
+import time
 
-a = 5
-b = 6
-c = 7
+start=time.time() #returns a float
 
-# Uncomment below to take inputs from the user
-# a = float(input('Enter first side: '))
-# b = float(input('Enter second side: '))
-# c = float(input('Enter third side: '))
+for x in range(20):
+    print(23*2.3)
 
-# calculate the semi-perimeter
-s = (a + b + c) / 2
+end=time.time()
 
-# calculate the area
-area = (s*(s-a)*(s-b)*(s-c)) ** 0.5
-print('The area of the triangle is %0.2f' %area)
+print(end-start)
